@@ -1,0 +1,117 @@
+html {
+  font-family: helvetica;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.main-section {
+  width:100%;
+}
+
+/*nav*/
+header {
+  display:flex;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 0px 1px 10px #1c2b2173;
+  background-color: #ace4b0;
+}
+
+header h1 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  flex-grow: 1;
+  text-shadow: 0px 2px 3px #969798;
+}
+
+nav {
+  margin-right: 1rem;
+}
+
+nav span {
+  padding: .5rem;
+}
+
+/*Info Section*/
+.info {
+  padding-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 1rem;
+
+}
+
+.flex-container {
+  display:flex;
+}
+
+.blurb {
+  text-align: center;
+  width: 25%;
+  height: auto;
+}
+
+.course-section li {
+  padding: .25rem 0rem;
+}
+
+.course-section ul {
+   list-style-type: circle;
+}
+
+/*Projects*/
+.projects-section {
+  display:flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 4.5rem;
+  background-color: #4b735b;
+}
+
+.projects-section h1 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 0px 2px 3px #02020285;
+}
+
+.project-container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  background-color: white;
+  margin: 1rem 1rem;
+  width: 30%;
+  box-shadow: 0px 6px 10px #1c2b2173;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.disc {
+  text-align: center;
+}
+
+.disc span {
+  font-weight: 400;
+  font-size: 1.87rem;
+  margin-top: 1rem;
+}
+
+/*Contact*/
+
+.contact {
+  padding-top: 2rem;
+}
