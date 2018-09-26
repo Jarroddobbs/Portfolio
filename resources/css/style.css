@@ -2,6 +2,7 @@ html {
   font-family: helvetica;
   font-size: 18px;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 *, *:before, *:after {
@@ -12,41 +13,54 @@ html {
   width:100%;
 }
 
+body{
+  background-attachment: fixed;
+}
+
 /*nav*/
 header {
-  display:flex;
+  display:inline-block;
+  justify-content: center;
   align-items: center;
-  height: 64px;
+  height: 120px;
   width: 100%;
   position: fixed;
   z-index: 2;
-  box-shadow: 0px 1px 10px #1c2b2173;
-  background-color: #ace4b0;
+  box-shadow: 0px 6px 10px #1c2b2173;
+  background-image: url(../images/banner.jpg);
+  background-position: bottom;
+  text-align: center;
 }
 
 header h1 {
-  margin: 1rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
-  flex-grow: 1;
-  text-shadow: 0px 2px 3px #969798;
+  text-shadow: 0px 5px 3px #c5c6c7;
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: 700;
+  font-size: 4rem;
 }
 
 nav {
-  margin-right: 1rem;
+
 }
 
 nav span {
-  padding: .5rem;
+  padding:.5rem .5rem 0rem .5rem;
+  font-size: 1.1rem;
+}
+
+ul span:hover {
+  border-bottom: solid 5px white;
 }
 
 /*Info Section*/
 .info {
-  padding-top: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0rem 1rem;
-
+  padding: 6.8rem 1rem 0rem 1rem;
+  background-color: #eaead16b;
 }
 
 .flex-container {
@@ -74,12 +88,17 @@ nav span {
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem 4.5rem;
-  background-color: #4b735b;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/banner.jpg);
+  background-position: center;
+  background-size: 1920px;
+  box-shadow: 10px 0px 10px 4px rgba(0,0,0,0.3);
 }
+
 
 .projects-section h1 {
   font-size: 2.5rem;
-  color: white;
   text-shadow: 0px 2px 3px #02020285;
 }
 
@@ -93,25 +112,45 @@ nav span {
   background-color: white;
   margin: 1rem 1rem;
   width: 30%;
-  box-shadow: 0px 6px 10px #1c2b2173;
+  border-radius: 3px;
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
 }
 
 .img-container img {
   width: 100%;
 }
 
-.disc {
-  text-align: center;
+/*Hover*/
+.img__wrap {
+  position: relative;
 }
 
-.disc span {
-  font-weight: 400;
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(167, 183, 193, 0.68);
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  text-align: center;
   font-size: 1.87rem;
-  margin-top: 1rem;
+  font-weight: 400;
+  padding-top: 6.5rem;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*Contact*/
 
 .contact {
-  padding-top: 2rem;
+  padding: 2rem 0rem;
+  background-color: #eaead16b;
+  text-align: center;
 }
