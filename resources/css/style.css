@@ -135,6 +135,11 @@ nav span {
   #mobile .img__description {
     font-size: 4rem;
   }
+
+  #mobile .img__wrap:active .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 
