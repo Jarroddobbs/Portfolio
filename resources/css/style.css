@@ -134,11 +134,9 @@ nav span {
 
   #mobile .img__description {
     font-size: 4rem;
-  }
-
-  #mobile .img__wrap:focus .img__description {
     visibility: visible;
     opacity: 1;
+    background: rgba(167, 183, 193, 0.55);
   }
 }
 
