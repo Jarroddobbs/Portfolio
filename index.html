@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Jarrod's Portfolio</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
   </head>
   <body>
 <!-- Header -->
-    <header>
+    <header id="header">
 
       <h1>Jarrod Dobrohorsky</h1>
       <nav class="desktop">
@@ -43,12 +46,52 @@
         </ul>
       </div>
     </div>
+
+<!-- Skills -->
+  <main>
+    <section id="skills">
+     <div id="mobile" class="container">
+       <!-- Skills heading -->
+       <h1 class="text-center sect-title">Technical Skills</h1>
+
+       <!-- 1x3 Bootstrap grid of skills with icons -->
+       <div class="row">
+         <!-- Frontend Column -->
+         <div class="col-sm-4 skill text-center">
+           <span aria-hidden="true" class="fa fa-photo fa-5x"></span>
+           <h3>Frontend</h3>
+           <p>Bootstrap</p>
+           <p>Sass</p>
+           <p>CSS3</p>
+         </div>
+
+         <!-- Backend Column -->
+         <div class="col-sm-4 skill text-center">
+           <span aria-hidden="true" class="fa fa-cog fa-5x"></span>
+           <h3>Backend</h3>
+           <p>SQL</p>
+           <p>MongoDB</p>
+           <p>Express.js</p>
+         </div>
+
+         <!-- Design Column -->
+         <div class="col-sm-4 skill text-center">
+           <span aria-hidden="true" class="fa fa-pencil fa-5x"></span>
+           <h3>Design</h3>
+           <p>Photoshop</p>
+           <p>Illustrator</p>
+           <p>InDesign</p>
+         </div>
+       </div>
+     </div>
+ </main>
+
 <!-- Projects -->
     <div id="projects" class="projects-section">
 
       <h1>Projects Completed</h1>
 
-      <div class="project-container">
+      <div id="mobile" class="project-container">
 
         <div class="project 1">
           <div class="center">
@@ -128,8 +171,8 @@
             </a>
           </div>
         </div>
+        </div>
 
-      </div>
     </div>
 <!-- Contact -->
     <div id="contact" class="contact">
@@ -137,6 +180,12 @@
       <span>Contact info   Phone: 204 854-1241 Email: jarrod.dob_246@hotmail.com</span>
     </div>
   </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <footer>
     </footer>
 
